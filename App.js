@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-
-import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
-
+import { Text, View, StyleSheet, TouchableOpacity, Button } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
 import { NavigationContainer } from '@react-navigation/native';
+import { GoogleSignin, GoogleSigninButton, statusCodes } from '@react-native-google-signin/google-signin';
+
+GoogleSignin.configure({
+  webClientId: '587321956894-1h9ljcd8lmo6rjniiu1p9p1nqnfhpfe9.apps.googleusercontent.com', // From Google Cloud Console
+});
 
  
 
